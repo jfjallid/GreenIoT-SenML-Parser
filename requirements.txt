@@ -1,0 +1,6 @@
+simplejson
+elasticsearch
+flask
+flask_restful
+python-dateutil
+-e git+https://github.com/jfjallid/senml-python.git#egg=senml-python
