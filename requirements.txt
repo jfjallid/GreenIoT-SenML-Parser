@@ -3,4 +3,5 @@ elasticsearch
 flask
 flask_restful
 python-dateutil
+attrs>=16.0.0
 -e git+https://github.com/jfjallid/senml-python.git#egg=senml-python
