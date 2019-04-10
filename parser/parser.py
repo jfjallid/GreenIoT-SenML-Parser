@@ -25,7 +25,7 @@ def parse_senml(data):
         logger.debug('Data fit in SenMLDocument!')
 
         for measurement in ml.measurements:
-            resolved = measurement.to_absolute(base=ml.base).to_json()
+            resolved = measurement.to_json()
 
             doc = {}
             if 't' in resolved:
