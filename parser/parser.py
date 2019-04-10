@@ -35,7 +35,7 @@ def parse_senml(data):
                     resolved['t'] = float(t)
                 else:
                     # A timestamp in the future is not relevant for sensor measurements.
-                    del resolved['t']
+                    resolved['t'] = float(epoch_time_now)
 
             resolved['timestamp'] = data['timestamp']
             resolved['uuid'] = data['uuid']
